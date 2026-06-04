@@ -1,11 +1,13 @@
-// Exercise 11: Campus performance summary
+// Exercise 11: Active students by campus
 //
-// Group active students by campus.
-// For each campus, calculate:
+// Use only active students.
+// Group students by campus.
+// For each campus, return:
+// - campus
 // - activeStudentCount
-// - averageAttendance rounded to 1 decimal place
-// - averageOverallScore rounded to 1 decimal place
-// Sort from highest averageOverallScore to lowest.
+// - studentNames sorted alphabetically
+//
+// Sort by activeStudentCount descending, then campus alphabetically.
 //
 // Requirement:
 // Provide a Lodash solution.
@@ -21,22 +23,53 @@ console.log(lodashSolution);
 Expected output:
 [
   {
+    campus: 'Vancouver',
+    activeStudentCount: 12,
+    studentNames: [
+      'Abigail Lewis',
+      'Amelia Anderson',
+      'Ava Chen',
+      'Benjamin White',
+      'Daniel Wright',
+      'Ella Roberts',
+      'Liam Park',
+      'Lily Baker',
+      'Mason Davis',
+      'Noah Wilson',
+      'Sebastian Campbell',
+      'Sophia Brown'
+    ]
+  },
+  {
     campus: 'Toronto',
     activeStudentCount: 10,
-    averageAttendance: 90.2,
-    averageOverallScore: 86.4
+    studentNames: [
+      'Aria Phillips',
+      'Charlotte Moore',
+      'Ethan Lee',
+      'Henry Clark',
+      'Isabella Martin',
+      'Leo Evans',
+      'Mia Santos',
+      'Owen Perez',
+      'Sofia King',
+      'Zoey Nelson'
+    ]
   },
   {
     campus: 'Montreal',
     activeStudentCount: 9,
-    averageAttendance: 88.9,
-    averageOverallScore: 85.1
-  },
-  {
-    campus: 'Vancouver',
-    activeStudentCount: 12,
-    averageAttendance: 89.3,
-    averageOverallScore: 84.4
+    studentNames: [
+      'Alexander Young',
+      'Emma Johnson',
+      'Evelyn Harris',
+      'Grace Scott',
+      'Harper Rodriguez',
+      'Lucas Garcia',
+      'Nora Mitchell',
+      'Samuel Adams',
+      'Wyatt Turner'
+    ]
   }
 ]
 */

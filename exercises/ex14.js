@@ -1,7 +1,11 @@
-// Exercise 14: Best course by cohort
+// Exercise 14: Cohort counts
 //
-// For each cohort, find the course with the highest average score.
-// Return: cohort, courseCode, averageScore rounded to 1 decimal place.
+// Group students by cohort.
+// For each cohort, return:
+// - cohort
+// - studentCount
+// - activeStudentCount
+//
 // Sort cohorts alphabetically.
 //
 // Requirement:
@@ -17,8 +21,8 @@ console.log(lodashSolution);
 /*
 Expected output:
 [
-  { cohort: 'Data-0526', courseCode: 'SQL', averageScore: 82.9 },
-  { cohort: 'UX-0526', courseCode: 'Figma', averageScore: 89.5 },
-  { cohort: 'Web-0526', courseCode: 'HTML', averageScore: 81.7 }
+  { cohort: 'Data-0526', studentCount: 9, activeStudentCount: 7 },
+  { cohort: 'UX-0526', studentCount: 8, activeStudentCount: 8 },
+  { cohort: 'Web-0526', studentCount: 19, activeStudentCount: 16 }
 ]
 */

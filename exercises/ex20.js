@@ -1,11 +1,12 @@
-// Exercise 20: Genre summary
+// Exercise 20: Movies by genre
 //
 // Group movies by genre.
-// For each genre, calculate:
+// For each genre, return:
+// - genre
 // - movieCount
-// - averageRating rounded to 1 decimal place
-// - totalBoxOffice rounded to 1 decimal place
-// Sort by averageRating descending, then totalBoxOffice descending.
+// - titles sorted alphabetically
+//
+// Sort by movieCount descending, then genre alphabetically.
 //
 // Requirement:
 // Provide a Lodash solution.
@@ -20,13 +21,57 @@ console.log(lodashSolution);
 /*
 Expected output:
 [
-  { genre: 'Sci-Fi', movieCount: 4, averageRating: 7.9, totalBoxOffice: 665.1 },
-  { genre: 'Drama', movieCount: 5, averageRating: 7.9, totalBoxOffice: 265.2 },
-  { genre: 'Adventure', movieCount: 3, averageRating: 7.7, totalBoxOffice: 331.8 },
-  { genre: 'Animation', movieCount: 3, averageRating: 7.6, totalBoxOffice: 670.2 },
-  { genre: 'Thriller', movieCount: 3, averageRating: 7.6, totalBoxOffice: 282.1 },
-  { genre: 'Romance', movieCount: 3, averageRating: 7.6, totalBoxOffice: 187.6 },
-  { genre: 'Action', movieCount: 4, averageRating: 7.5, totalBoxOffice: 840.4 },
-  { genre: 'Comedy', movieCount: 5, averageRating: 6.8, totalBoxOffice: 276.3 }
+  {
+    genre: 'Comedy',
+    movieCount: 5,
+    titles: [
+      'Bright Tuesday',
+      'Castle Switch',
+      'Hidden Recipe',
+      'Laughing Map',
+      'Weekend Volcano'
+    ]
+  },
+  {
+    genre: 'Drama',
+    movieCount: 5,
+    titles: [
+      'Glass Meadow',
+      'Golden Steps',
+      'Harbor Lights',
+      'North Harbor',
+      'The Last Orchard'
+    ]
+  },
+  {
+    genre: 'Action',
+    movieCount: 4,
+    titles: [ 'Iron Valley', 'Metro Chase', 'Neon Badge', 'Red District' ]
+  },
+  {
+    genre: 'Sci-Fi',
+    movieCount: 4,
+    titles: [ 'Deep Signal', 'Silent Circuit', 'Solar Drift', 'The Small Planet' ]
+  },
+  {
+    genre: 'Adventure',
+    movieCount: 3,
+    titles: [ 'Dust and Thunder', 'Stone Horizon', 'Winter Compass' ]
+  },
+  {
+    genre: 'Animation',
+    movieCount: 3,
+    titles: [ 'Orbit Kids', 'Pixel Parade', 'Rocket Garden' ]
+  },
+  {
+    genre: 'Romance',
+    movieCount: 3,
+    titles: [ 'Cafe Midnight', 'Moonlit Train', 'Paper Lanterns' ]
+  },
+  {
+    genre: 'Thriller',
+    movieCount: 3,
+    titles: [ 'Blue Witness', 'Quiet Evidence', 'River of Glass' ]
+  }
 ]
 */

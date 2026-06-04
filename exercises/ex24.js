@@ -8,8 +8,8 @@
 // For each bucket, return:
 // - bucket
 // - movieCount
-// - averageRating rounded to 1 decimal place
 // - titles sorted alphabetically
+//
 // Sort buckets in this order: short, standard, long.
 //
 // Requirement:
@@ -28,7 +28,6 @@ Expected output:
   {
     bucket: 'short',
     movieCount: 9,
-    averageRating: 7.1,
     titles: [
       'Bright Tuesday',
       'Cafe Midnight',
@@ -44,7 +43,6 @@ Expected output:
   {
     bucket: 'standard',
     movieCount: 16,
-    averageRating: 7.6,
     titles: [
       'Blue Witness',
       'Dust and Thunder',
@@ -67,7 +65,6 @@ Expected output:
   {
     bucket: 'long',
     movieCount: 5,
-    averageRating: 8.2,
     titles: [
       'Deep Signal',
       'Iron Valley',

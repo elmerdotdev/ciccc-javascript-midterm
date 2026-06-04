@@ -1,13 +1,8 @@
-// Exercise 16: Normalized student records
+// Exercise 16: Vancouver web students
 //
-// Create a normalized object of active Vancouver students in Web-0526 keyed by id.
-// Each value should contain:
-// - name
-// - campus
-// - cohort
-// - courseScores as an object of course code -> score
-// - projectAverage rounded to 1 decimal place
-// - skillCount
+// Find active students from Vancouver in Web-0526.
+// Return: id, name, attendance, skillCount.
+// Sort by attendance descending.
 //
 // Requirement:
 // Provide a Lodash solution.
@@ -21,54 +16,12 @@ console.log(lodashSolution);
 
 /*
 Expected output:
-{
-  S001: {
-    name: 'Ava Chen',
-    campus: 'Vancouver',
-    cohort: 'Web-0526',
-    courseScores: { JS: 91, HTML: 88, CSS: 93 },
-    projectAverage: 92,
-    skillCount: 3
-  },
-  S002: {
-    name: 'Liam Park',
-    campus: 'Vancouver',
-    cohort: 'Web-0526',
-    courseScores: { JS: 74, HTML: 79, CSS: 72 },
-    projectAverage: 74.5,
-    skillCount: 2
-  },
-  S007: {
-    name: 'Sophia Brown',
-    campus: 'Vancouver',
-    cohort: 'Web-0526',
-    courseScores: { JS: 68, HTML: 81, CSS: 74 },
-    projectAverage: 71.5,
-    skillCount: 2
-  },
-  S010: {
-    name: 'Mason Davis',
-    campus: 'Vancouver',
-    cohort: 'Web-0526',
-    courseScores: { JS: 86, HTML: 80, CSS: 84 },
-    projectAverage: 85,
-    skillCount: 2
-  },
-  S022: {
-    name: 'Daniel Wright',
-    campus: 'Vancouver',
-    cohort: 'Web-0526',
-    courseScores: { JS: 87, HTML: 85, CSS: 88 },
-    projectAverage: 88,
-    skillCount: 3
-  },
-  S034: {
-    name: 'Sebastian Campbell',
-    campus: 'Vancouver',
-    cohort: 'Web-0526',
-    courseScores: { JS: 94, HTML: 90, CSS: 92 },
-    projectAverage: 93,
-    skillCount: 4
-  }
-}
+[
+  { id: 'S034', name: 'Sebastian Campbell', attendance: 98, skillCount: 4 },
+  { id: 'S001', name: 'Ava Chen', attendance: 96, skillCount: 3 },
+  { id: 'S022', name: 'Daniel Wright', attendance: 94, skillCount: 3 },
+  { id: 'S010', name: 'Mason Davis', attendance: 89, skillCount: 2 },
+  { id: 'S002', name: 'Liam Park', attendance: 82, skillCount: 2 },
+  { id: 'S007', name: 'Sophia Brown', attendance: 76, skillCount: 2 }
+]
 */

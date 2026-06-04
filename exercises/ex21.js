@@ -1,12 +1,13 @@
-// Exercise 21: Directors with strong track records
+// Exercise 21: Directors with at least 3 movies
 //
-// Find directors with at least 3 movies.
+// Group movies by director.
+// Return only directors with at least 3 movies.
 // For each director, return:
 // - director
 // - movieCount
-// - averageRating rounded to 1 decimal place
-// - bestMovieTitle
-// Sort by averageRating descending, then director alphabetically.
+// - titles sorted alphabetically
+//
+// Sort by movieCount descending, then director alphabetically.
 //
 // Requirement:
 // Provide a Lodash solution.
@@ -21,13 +22,45 @@ console.log(lodashSolution);
 /*
 Expected output:
 [
-  { director: 'Aiko Tanaka', movieCount: 3, averageRating: 7.9, bestMovieTitle: 'Harbor Lights' },
-  { director: 'Ari Kim', movieCount: 3, averageRating: 7.9, bestMovieTitle: 'Silent Circuit' },
-  { director: 'Maya Chen', movieCount: 4, averageRating: 7.8, bestMovieTitle: 'Solar Drift' },
-  { director: 'Nora Patel', movieCount: 4, averageRating: 7.7, bestMovieTitle: 'Glass Meadow' },
-  { director: 'Hugo Larsen', movieCount: 4, averageRating: 7.4, bestMovieTitle: 'Stone Horizon' },
-  { director: 'Sofia Rossi', movieCount: 3, averageRating: 7.4, bestMovieTitle: 'Golden Steps' },
-  { director: 'Emma Wilson', movieCount: 3, averageRating: 7.2, bestMovieTitle: 'Pixel Parade' },
-  { director: 'Carlos Vega', movieCount: 4, averageRating: 7.1, bestMovieTitle: 'Neon Badge' }
+  {
+    director: 'Carlos Vega',
+    movieCount: 4,
+    titles: [ 'Dust and Thunder', 'Neon Badge', 'Red District', 'Weekend Volcano' ]
+  },
+  {
+    director: 'Hugo Larsen',
+    movieCount: 4,
+    titles: [ 'Castle Switch', 'Stone Horizon', 'The Small Planet', 'Winter Compass' ]
+  },
+  {
+    director: 'Maya Chen',
+    movieCount: 4,
+    titles: [ 'Deep Signal', 'Orbit Kids', 'Rocket Garden', 'Solar Drift' ]
+  },
+  {
+    director: 'Nora Patel',
+    movieCount: 4,
+    titles: [ 'Blue Witness', 'Glass Meadow', 'River of Glass', 'The Last Orchard' ]
+  },
+  {
+    director: 'Aiko Tanaka',
+    movieCount: 3,
+    titles: [ 'Harbor Lights', 'Moonlit Train', 'Paper Lanterns' ]
+  },
+  {
+    director: 'Ari Kim',
+    movieCount: 3,
+    titles: [ 'North Harbor', 'Quiet Evidence', 'Silent Circuit' ]
+  },
+  {
+    director: 'Emma Wilson',
+    movieCount: 3,
+    titles: [ 'Bright Tuesday', 'Laughing Map', 'Pixel Parade' ]
+  },
+  {
+    director: 'Sofia Rossi',
+    movieCount: 3,
+    titles: [ 'Cafe Midnight', 'Golden Steps', 'Hidden Recipe' ]
+  }
 ]
 */
